@@ -1,0 +1,3 @@
+function usuarioIngresado() {
+  return true;
+}
