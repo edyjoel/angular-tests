@@ -2,15 +2,22 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { MedicosComponent } from './intermedio/espias/medicos.component';
+import { IncrementadorComponent } from './intermedio2/incrementador/incrementador.component';
+import { MedicoComponent } from './intermedio2/medico/medico.component';
+import { HospitalComponent } from './intermedio2/hospital/hospital.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HospitalComponent,
+    MedicosComponent,
+    IncrementadorComponent,
+    MedicoComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
